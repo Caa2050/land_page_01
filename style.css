@@ -1,0 +1,258 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.flex-container{
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 120px;
+    
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #F4F9FF;
+    background-color: black;
+}
+header{
+    background-color: black;
+    height: 100px;
+    display: flex; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+header .nav-bar{
+    display: flex;
+    font-size: medium;
+    width: 100%;
+    max-width: 400px;
+    align-items:flex-end;
+    justify-content: space-between;  
+    
+}
+.nav-bar button{
+    
+    transform: skew(20deg);
+    color: #fff;
+     background: black;
+     width: 250px;
+     height: 50px;
+     transition: 0.9s;
+}
+
+.nav-bar .green{
+     border-left: 1px solid #008C45;
+}
+.nav-bar .white{
+     border-left: 1px solid #F4F9FF;
+}
+.nav-bar .red{
+     border-left: 1px solid #CD212A;
+}
+.nav-bar .green:hover{
+    background-color: #008C45;
+    color:#F4F9FF
+}
+.nav-bar .white:hover{
+    background-color:#F4F9FF;
+    color: black;
+}
+.nav-bar .red:hover{
+    background-color: #CD212A;
+    color: #F4F9FF
+}
+/*Conteúdo principal*/
+.promoção{
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    max-width: 950px;
+    padding-left: 150px;
+}
+.promo-1{
+    border: 1px solid #008C45;
+    margin:60px;
+    transition: 0.9s;
+}
+.promo-1 img{
+    width: 150px;
+}
+p{
+    margin-left: 5px;
+}
+.promo-1:hover{
+    color: #F4F9FF;
+    background-color: #008C45;
+}
+.promo-2{
+    border: 1px solid #F4F9FF;
+    margin: 60px;
+    transition: 0.9s;
+}
+.promo-2 img{
+    width: 150px;
+}
+.promo-2:hover{
+    color: black;
+    background-color: #F4F9FF;
+}
+.promo-3{
+    border: 1px solid #CD212A;
+    margin: 60px;
+    transition: 0.9s;
+}
+.promo-3 img{
+    width: 150px;
+}
+.promo-3:hover{
+    color: #F4F9FF;
+    background-color: #CD212A;
+}
+.pedidos{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+.pedidos .image{
+    margin: 60px;
+}
+.pedidos .image .mais_pedidos{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+
+.pedidos .image .fazer_pedido a{
+    color: #F4F9FF;
+}
+.cardapio{
+    display: flex;
+    flex-direction: column;
+}
+.cardapio .sabores{
+    border: 1px solid #008C45;
+    margin: 60px;
+    padding-right: 500px;
+    transition: 0.9s;
+}
+.cardapio .sabores h2{
+    position:relative;
+    left: 150px;
+    bottom: 70px;
+}
+.cardapio .sabores img{
+    margin-top: 10px;
+    width: 130px;
+
+}
+.cardapio .sabores:hover{
+    color: #F4F9FF;
+    background-color: #008C45;
+}
+.cardapio .bebidas{
+    border: 1px solid #CD212A;
+    margin: 60px;
+    padding-right: 500px;
+     transition: 0.9s;
+}
+.cardapio .bebidas h2{
+    position:relative;
+    left: 150px;
+    bottom: 80px;
+}
+.cardapio .bebidas img{
+    margin-top: 10px;
+    width: 100px;
+    
+}
+.cardapio .bebidas:hover{
+    color: #F4F9FF;
+    background-color: #CD212A;
+}
+.cardapio .acompanhamentos{
+    border: 1px solid #F4F9FF;
+    margin: 60px;
+    padding-right: 500px;
+     transition: 0.9s;
+    
+}
+.cardapio .acompanhamentos h2{
+    position: relative;
+    left: 150px;
+    bottom: 100px;
+}
+.cardapio .acompanhamentos img{
+    margin-top: 10px;
+    width: 130px;
+}
+.cardapio .acompanhamentos:hover{
+    color: black;
+    background-color: #F4F9FF;
+}
+/* Fim do conteúdo principal */
+div h3{
+margin-top: 100px;
+margin-left: 40px;
+}
+footer{
+    background-color: black;
+    height: 100px;
+    margin-top: auto;
+}
+footer ul{
+    margin-left: 10px;
+}
+footer ul li a{
+    color:lightgray;
+    
+}
+/* mobile version */
+@media(max-width:992px){
+    .pedidos{
+        flex-direction: column;
+    }
+    .promoção{
+        padding-top: 60px;
+        flex-direction: column;
+        padding-left: 80px;
+        max-width: 171px;
+    }
+    .promo-1{
+        margin: 10px;
+    }
+    .promo-2{
+        margin:10px;
+
+    }
+    .promo-3{
+        margin:10px;
+    }
+    .pedidos .image .mais_pedidos{
+        max-width: 300px;
+    }
+    .cardapio .sabores{
+        padding-right: 200px;
+    }
+    .cardapio .acompanhamentos{
+        padding-right: 200px;
+        font-size: 12px;
+
+    }
+    .cardapio .bebidas{
+        padding-right: 200px;
+    }
+
+}
